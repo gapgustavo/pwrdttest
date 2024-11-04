@@ -125,7 +125,6 @@ import requests
 import json
 
 BASE_URL = 'URL_DE_SUA_AWS_LAMBDA'
-headers = {'x-api-key': 'SEU_API_KEY'}
 
 def create_account(username, password):
     url = f'{BASE_URL}/create'
