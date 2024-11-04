@@ -3,6 +3,7 @@ Uma API RESTful para acessar informações do universo Star Wars, incluindo pers
 
 ## Sumário
 - [Introdução](#introdução)
+- [Estrutura](#estrutura-do-projeto)
 - [Configuração](#configuração-do-ambiente-aws-lambda)
 - [Endpoints](#endpoints)
   - [Autenticação](#autenticação)
@@ -13,6 +14,13 @@ Uma API RESTful para acessar informações do universo Star Wars, incluindo pers
 
 ## Introdução
 Esta API foi criada para fornecer informações detalhadas do universo Star Wars. Com endpoints separados para personagens, planetas, naves e filmes, é possível obter dados específicos e filtrar resultados conforme os requisitos solicitados.
+
+## Estrutura do Projeto
+- `lambda_function.py`: Função principal para roteamento de endpoints e autenticação.
+- `data_handlers.py`: Manipuladores de dados para criação de conta, login, e consultas específicas.
+- `swapi_client.py`: Classe para interface com a API SWAPI.
+- `auth_service.py`: Serviço de autenticação e validação de API keys.
+- `firebase_db.py`: Conexão e gerenciamento de dados no Firebase Database.
 
 ## Configuração do Ambiente AWS Lambda
 Para configurar o ambiente do AWS Lambda com todos os pacotes necessários, siga as instruções abaixo:
